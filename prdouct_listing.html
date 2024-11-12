@@ -1,0 +1,97 @@
+<!-- Product Listing page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABHIRANG</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Artworks Marketplace</div>
+        <nav>
+            <ul>
+                <li><a href="#product-listing">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="product-listing">
+            <h2>Available Artworks</h2>
+
+            <!-- Product 1 -->
+            <div class="product" id="product-1">
+                <img src="https://via.placeholder.com/300x200?text=Starry+Night" alt="Starry Night Over the Rhône">
+                <h3>Starry Night Over the Rhône</h3>
+                <p>Artist: Vincent van Gogh</p>
+                <p>Price: $200</p>
+                <p>Description: A beautiful depiction of the night sky filled with stars over the Rhône river, showcasing Van Gogh's unique style and use of color.</p>
+                <button onclick="customizeArtwork('Starry Night Over the Rhône')">Customize Artwork</button>
+                <label>
+                    <input type="checkbox" id="insurance-1"> Add Insurance ($20)
+                </label>
+                <button onclick="buyArtwork('Starry Night Over the Rhône', 200)">Buy Now</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product" id="product-2">
+                <img src="https://via.placeholder.com/300x200?text=Persistence+of+Memory" alt="The Persistence of Memory">
+                <h3>The Persistence of Memory</h3>
+                <p>Artist: Salvador Dalí</p>
+                <p>Price: $300</p>
+                <p>Description: This iconic painting features melting clocks in a surreal landscape, exploring themes of time and reality.</p>
+                <button onclick="customizeArtwork('The Persistence of Memory')">Customize Artwork</button>
+                <label>
+                    <input type="checkbox" id="insurance-2"> Add Insurance ($20)
+                </label>
+                <button onclick="buyArtwork('The Persistence of Memory', 300)">Buy Now</button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product" id="product-3">
+                <img src="https://via.placeholder.com/300x200?text=The+Kiss" alt="The Kiss">
+                <h3>The Kiss</h3>
+                <p>Artist: Gustav Klimt</p>
+                <p>Price: $250</p>
+                <p>Description: A stunning representation of love and intimacy, this artwork is known for its intricate patterns and golden hues.</p>
+                <button onclick="customizeArtwork('The Kiss')">Customize Artwork</button>
+                <label>
+                    <input type="checkbox" id="insurance-3"> Add Insurance ($20)
+                </label>
+                <button onclick="buyArtwork('The Kiss', 250)">Buy Now</button>
+            </div>
+
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to Artworks Marketplace, where art lovers and artists connect. Discover unique paintings and customize your own artwork!</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out to us at contact@artworks.com.</p>
+        </section>
+
+        <!-- Login Section -->
+        <section id="login">
+            <h2>Login</h2>
+            <!-- Login form can be added here -->
+        </section>
+
+    </main>
+
+    <footer>
+        &copy; 2024 Artworks Marketplace | All rights reserved.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

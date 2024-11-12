@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    background-color: rgb(165, 192, 201);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the top */
+    color: rgb(239, 238, 220);
+    margin: 0; /* Remove default margin */
+    font-family: 'Arial', sans-serif; /* Set a default font */
+}
+
+.container_box {
+    display: flex;
+    height: auto; /* Allow dynamic height */
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Product Card Styles */
+.container {
+    height: auto; /* Allow dynamic height based on content */
+    width: 368px;
+    background-color: rgb(20, 21, 82);
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: rgba(41, 40, 40, 0.2) 0px 4px 8px; /* Enhanced shadow effect */
+    gap: 20px; /* Reduced gap for a tighter layout */
+    transition: transform 0.2s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.05); /* Slightly reduced scale for hover effect */
+}
+
+img {
+    width: 340px;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 230px; /* Limit maximum height */
+    border-radius: 10px;
+    border: 5px solid white;
+}
+
+/* Text Styles */
+.course-title {
+    font-size: 1.5em; /* Adjusted for better readability */
+}
+
+.response,
+.ratings,
+.interested {
+    margin-left: 20px; /* Consistent left margin */
+}
+
+.ratings {
+    margin-top: 5px; /* Space above ratings */
+}
+
+.des {
+    text-align: center;
+    padding: 5px;
+}
+
+.price-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.price {
+    font-size: 1.2em; 
+}
+
+.explore_link {
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+
+.link_a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 376px) {
+    body {
+        background-color: rgb(99, 176, 201);
+        padding-top: 20px; /* Space from the top on small screens */
+        align-items: center; /* Center items on small screens */
+        overflow-x:hidden; /* Prevent horizontal scrolling */
+        font-size :14px; /* Base font size for smaller screens */
+      }
+    
+      .container {
+          height:auto; 
+          width:auto; 
+          border-radius :5px; 
+          gap :10px; 
+      }
+    
+      img {
+          width :240px; 
+          height :auto; 
+          max-height :130px; 
+      }
+    
+      .course-title {
+          font-size :1em; 
+      }
+    
+      .response,
+      .ratings {
+          margin-left :10px; 
+      }
+}
