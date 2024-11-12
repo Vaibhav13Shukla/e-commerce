@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Cart - Art Marketplace</title>
+</head>
+<body>
+    <header>
+        <h1>Art Marketplace</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Shop</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Your Cart</h2>
+
+        <div class="cart-items">
+    <div class="cart-item">
+        <img src="art1.jpg" alt="Artwork 1">
+        <div class="cart-item-details">
+            <h3>Artwork Title 1</h3>
+            <p>Price: $200</p>
+            <button class="btn" onclick="removeFromCart(1)">Remove</button>
+        </div>
+    </div>
+    <!-- Repeat for more items in the cart -->
+</div>
+<div class="cart-summary">
+    <h3>Total: $200</h3>
+    <button class="btn" onclick="checkout()">Proceed to Checkout</button>
+</div>
+</main>
+
+<footer>
+<p>&copy; 2023 Art Marketplace</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
